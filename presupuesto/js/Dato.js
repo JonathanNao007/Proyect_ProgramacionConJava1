@@ -5,20 +5,20 @@ class Dato{
     }
     //
     get descripcion(){
-        console.log('Obteniendo descripción...');
+        //console.log('Obteniendo descripción...');
         return this._descripcion;
     }
     set descripcion(nuevaDescripcion){
-        console.log('Estableciendo descripción...');
+        //console.log('Estableciendo descripción...');
         this._descripcion = nuevaDescripcion;
     }
     //
     get valor(){
-        console.log('Obteniendo valor...');
+        //console.log('Obteniendo valor...');
         return this._valor;
     }
     set valor(nuevoValor){
-        console.log('Estableciendo valor...');
+        //console.log('Estableciendo valor...');
         this._valor = nuevoValor;
     }
 }
