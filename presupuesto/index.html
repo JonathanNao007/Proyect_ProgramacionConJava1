@@ -12,7 +12,7 @@
             <div class="presupuesto_titulo">
                 Presupuesto Disponible
             </div>
-            <div class="presupuesto_valor">
+            <div id="presupuesto-disponible" class="presupuesto_valor">
                 +2,000.00
             </div>
             <div class="presupuesto_ingreso limpiarEstilos">
@@ -20,8 +20,8 @@
                     <p>Ingresos</p>
                 </div>
                 <div class="derecha">
-                    <div class="presupuesto_ingreso--valor">
-                        <p>+4,000.00</p>
+                    <div id="resumen-Ingresos" class="presupuesto_ingreso--valor">
+                        +4,000.00
                     </div>
                     <div class="presupuesto_ingreso--porcentaje">
                         <p> </p>
@@ -33,11 +33,11 @@
                     <p>Egresos</p>
                 </div>
                 <div class="derecha limpiarEstilos">
-                    <div class="presupuesto_egreso--valor">
-                        <p>-1,900.00</p>
+                    <div id="resumen-egresos" class="presupuesto_egreso--valor">
+                        -1,900.00
                     </div>
-                    <div class="presupuesto_egreso--porcentaje">
-                        <p>45%</p>
+                    <div id="resumen-porcentaje-egresos" class="presupuesto_egreso--porcentaje">
+                        45%
                     </div>
                 </div>
             </div>
@@ -47,12 +47,12 @@
     <form id="forma" action="">
         <div class="agregar">
             <div class="agregar_contenedor">
-                <select class="agregar_tipo" name="" id="tipo"> 
+                <select class="agregar_tipo" name="selectTipo" id="tipo"> 
                     <option value="ingreso" selected> + </option>
                     <option value="egreso"> - </option>
                 </select>  
-                <input type="text" id="descripcion" class="agregar_descripcion" placeholder="Agregar Descripción">     
-                <input type="number" id="valor" class="agregar_valor" placeholder="Valor" step="any">        
+                <input type="text" name="descripcion" id="descripcion" class="agregar_descripcion" placeholder="Agregar Descripción" required>     
+                <input type="number" name="valor" id="valor" class="agregar_valor" placeholder="Valor" step="any" required>        
                 <button type="button" id="agregar" class="agregar_btn"><ion-icon name="checkmark-circle-outline"></ion-icon></button>
             </div>
         </div>
